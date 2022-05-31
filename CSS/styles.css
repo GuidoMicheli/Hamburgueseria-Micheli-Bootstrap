@@ -603,12 +603,40 @@ footer {
         grid-template-areas:
             "header"
             "imagen1"
-            "texto 1"
+            "texto1"
             "imagen2"
-            "texto 2"
+            "texto2"
             "gracias"
             "footer";
         height: 100vh;
         grid-template-columns: 1fr;
     }
+
+    #locales{
+        display: grid;
+        grid-template-areas:
+            "header"
+            "localestitulo"
+            "local1img"
+            "local1ubi"
+            "local2img"
+            "local2ubi"
+            "local3img"
+            "local3ubi"
+            "local4img"
+            "local4ubi"
+            "local5img"
+            "local5ubi"
+            "local6img"
+            "local6ubi "
+            "footer";
+            height: 100vh;
+        grid-template-columns: 1fr;
+    
+    }
+
+    .localestitulo{
+        font-size: 25px;
+    }
+
 }
