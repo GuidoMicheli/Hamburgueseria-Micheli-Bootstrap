@@ -33,21 +33,6 @@ header .header__titulo{
     text-shadow: 5px 5px #6b251a;
 }
 
-header .header__menu ul {
-    list-style: none;
-    display: flex;
-}
-
-header .header__menu ul li a {
-    background-color: tomato;
-    margin: 0 10px;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    text-decoration: none;
-    transition: box-shadow 1s;
-}
-
 header .header__menu ul li a:hover {
     background-color: #6b251a;
     box-shadow: 10px 15px 18px #6b251a;
@@ -55,6 +40,10 @@ header .header__menu ul li a:hover {
 
 .header__nav, .nav__input{
     display: none;
+}
+
+.nav__input:checked + .header__menu{
+    background-color: tomato;
 }
 
 footer {
@@ -65,6 +54,33 @@ footer {
     justify-content: space-between;
     align-items: center;
     grid-area: footer;
+}
+
+.header__menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+
+.nav__item{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    --clippy: polygon (0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav__item::after{
+    color: white;
+    content: "";
+    display: block;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+.nav__item:hover{
+    --clippy: polygon (0 0, 100% 0, 100% 100%, 0  100%);
 }
 
 #footer__texto{
@@ -549,7 +565,7 @@ footer {
         transition: clip-path 1s ease-in-out;
     }
     
-    .nav__input:checked + .header__seleccion{
+    .nav__input:checked + .header__menu{
         clip-path: circle(100% at center);
     }
 
