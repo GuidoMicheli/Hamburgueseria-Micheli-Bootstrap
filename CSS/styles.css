@@ -1,0 +1,614 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: tomato;
+    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    background-color: darkred;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+    grid-area: header;
+}
+
+#logo {
+    padding: 10px;
+    width: 150px;
+}
+
+header .header__titulo{
+    font-family: 'Fugaz One', cursive;
+    color: white;
+    font-size: 20px;
+    text-shadow: 5px 5px #6b251a;
+}
+
+header .header__menu ul {
+    list-style: none;
+    display: flex;
+}
+
+header .header__menu ul li a {
+    background-color: tomato;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: box-shadow 1s;
+}
+
+header .header__menu ul li a:hover {
+    background-color: #6b251a;
+    box-shadow: 10px 15px 18px #6b251a;
+}
+
+.header__nav, .nav__input{
+    display: none;
+}
+
+footer {
+    background-color: darkred;
+    padding: 10px; 
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: footer;
+}
+
+#footer__texto{
+    font-size: 10px;
+    color: white;
+    float: left;
+    margin-top: 13px;
+}
+
+#footer__redes {
+    display: flex;
+    float: right;
+}
+
+#footer__redes > a > img{
+    width: 50px;
+    display: flex;
+    margin: 0 2px;
+    padding: 2px;
+}
+
+.main__imagen > img{
+    height: 700px;
+}
+
+.main__texto1{
+    font-family: 'Bungee Shade', cursive;
+    padding: 20px;
+    font-size: 80px;
+    color: white;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    grid-area: punchline1;
+}
+
+.main__texto2{
+    font-family: 'Bungee Shade', cursive;
+    padding: 20px;
+    font-size: 80px;
+    color: white;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    grid-area: punchline2;
+}
+
+#principal{
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "hamburguesa punchline1"
+        "hamburguesa punchline2"
+        "footer footer";
+        height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.main__imagen{
+    grid-area: hamburguesa;
+}
+
+.construccion{
+    margin: 0 10px;
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.contacto{
+    margin: 20 20px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: contacto;
+}
+
+#contactowhatsapp{
+    padding: 20px;
+    margin: 0 10px;
+}
+
+#contactowhatsapp > a > img{
+    height: 500px;
+}
+
+.contactotitulo{
+    padding: 20px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    grid-area: contactotitulo;
+}
+
+#formulario
+{
+    color: white;
+    display: grid;;
+    grid-template-areas:
+        "header"
+        "contactotitulo"
+        "contacto"
+        "footer";
+        height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#quienessomos{
+    color: white;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "imagen1 texto1 texto1"
+        "texto2 texto2 imagen2"
+        "gracias gracias gracias"
+        "footer footer footer";
+        height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.quienessomos__historiaimg{
+    grid-area: imagen1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.quienessomos__historiaimg > img{
+    height: 200px;
+}
+
+.quienessomos__historiatxt{
+    grid-area: texto1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.quienessomos__proovedorestxt{
+    grid-area: texto2;
+    margin: 10px;
+    padding: 10px;
+}
+
+.quienessomos__proovedoresimg{
+    grid-area: imagen2;
+    margin: 10px;
+    padding: 10px;
+}
+
+.quienessomos__proovedoresimg > img{
+    height: 200px;
+}
+
+.gracias{
+    margin: 20 20px;
+    padding: 20px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    grid-area: gracias;
+}
+
+.quienessomos__proovedoresimg, .quienessomos__historiatxt, .quienessomos__historiaimg, .quienessomos__proovedorestxt, .gracias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#locales{
+    color: white;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "localestitulo localestitulo"
+        "local1img local1ubi"
+        "local2ubi local2img"
+        "local3img local3ubi"
+        "local4ubi local4img"
+        "local5img local5ubi"
+        "local6ubi local6img"
+        "footer footer";
+        height: 100vh;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.local1img{
+    grid-area: local1img;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.local1img > img{
+    height: 200px;
+}
+
+.local2img{
+    grid-area: local2img;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.local2img > img{
+    height: 200px;
+}
+
+.local3img{
+    grid-area: local3img;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.local3img > img{
+    height: 200px;
+}
+
+.local4img{
+    grid-area: local4img;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.local4img > img{
+    height: 200px;
+}
+
+.local5img{
+    grid-area: local5img;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.local5img > img{
+    height: 200px;
+}
+
+.local6img{
+    grid-area: local6img;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.local6img > img{
+    height: 200px;
+}
+
+.local1ubi{
+    grid-area: local1ubi;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+
+.local2ubi{
+    grid-area: local2ubi;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+
+.local3ubi{
+    grid-area: local3ubi;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+
+.local4ubi{
+    grid-area: local4ubi;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+
+.local5ubi{
+    grid-area: local5ubi;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+
+.local6ubi{
+    grid-area: local6ubi;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+
+.localestitulo{
+    padding: 20px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    grid-area: localestitulo;
+}
+
+#menu{
+    color: white;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "menutitulo"
+        "titulo1"
+        "grid1"
+        "titulo2"
+        "grid2"
+        "titulo3"
+        "grid3"
+        "titulo4"
+        "grid4"
+        "footer";
+        height: 100vh;
+    grid-template-columns: 1fr;
+}
+
+.carne {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    grid-area: grid1;
+}
+.flex-item {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: auto;
+}
+.flex-item img {
+    width: 100%;
+}
+
+.veganas {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    grid-area: grid2;
+}
+
+.guarniciones {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    grid-area: grid3;
+}
+
+.bebidas {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    grid-area: grid4;
+}
+
+.menutitulo{
+    padding: 20px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    grid-area: menutitulo;
+}
+.titulohamburguesas{
+    padding: 20px;
+    margin: 0 10px;
+    color: white;
+    font-size: 25px;
+    grid-area: titulo1;
+}
+
+.tituloveganas{
+    padding: 20px;
+    margin: 0 10px;
+    color: white;
+    font-size: 25px;
+    grid-area: titulo2;
+}
+
+.tituloguarniciones{
+    padding: 20px;
+    margin: 0 10px;
+    color: white;
+    font-size: 25px;
+    grid-area: titulo3;
+}
+
+.titulobebidas{
+    padding: 20px;
+    margin: 0 10px;
+    color: white;
+    font-size: 25px;
+    grid-area: titulo4;
+}
+
+@media screen and (max-width: 700px) {
+
+    header {
+        height: 85px;
+    }
+    
+    header .header__titulo{
+        font-size: 6px;
+    }
+
+    #logo
+    {
+        width: 75px;
+    }
+
+    .header__nav{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .header__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: tomato;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    
+    .nav__input:checked + .header__seleccion{
+        clip-path: circle(100% at center);
+    }
+
+    .main__imagen > img{
+        height: 370px;
+    }
+
+    .main__texto1{
+        font-size: 25px;
+        padding-left: 60px;
+    }
+
+    .main__texto2{
+        font-size: 25px;
+        padding-left: 60px;
+    }
+
+    #principal{
+        display: grid;
+        grid-template-areas:
+            "header"
+            "hamburguesa"
+            "punchline1"
+            "punchline2"
+            "footer";
+            height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #contactowhatsapp > a > img{
+        height: 300px;
+        padding-left: 50px;
+    }
+
+    .contactotitulo{
+        font-size: 15px;
+    }
+
+    .contacto{
+        display: block;
+        align-items: center;
+    }
+
+    .flex-item {
+        width: 100px;
+        font-size: 13px;
+    }
+
+    #quienessomos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "imagen1"
+            "texto 1"
+            "imagen2"
+            "texto 2"
+            "gracias"
+            "footer";
+        height: 100vh;
+        grid-template-columns: 1fr;
+    }
+}
