@@ -6,88 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasty Burger</title>
     <link rel="shortcut icon" href="../Img/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fugaz+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
 
 <body>
     
-    <div id="quienessomos">
     
-        <header>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark bg-propio">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TASTY BURGER</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/quienessomos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/menu.html">Menú</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/locales.html">Locales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-            <div class="header__logo">
-                <img src="../Img/Logo.png" id="logo" alt="logo">
+      <div class="container mt-5">
+        <div class="row gap-2">
+            <div class="col-sm bg-danger text-light p-5 col-md-6 col-lg-6">
+                <img src="../Img/imagendeuda.png" class="img-fluid" alt="logo">
             </div>
+            <div class="col bg-warning p-5 text-danger col-lg">
+             <p class="text-center" style="font-size: 20px;">Somos una de las hamburgueserías más antiguas de Palermo, situados en la zona de Plaza Serrano, en el mismo lugar desde 1990.
 
-            <div class="header__titulo">
-                <h1>TASTY BURGER ~ THE BEST IN TOWN</h1>
-            </div>    
+                En la actualidad somos un equipo de 30 personas, que trabajamos a diario para dar a nuestros clientes el mejor servicio y la mejor calidad.
+                    
+                Con mas de 30 años de experiencia en el sector de la hamburguesería, y siempre con la misma dirección, trabajamos a diario con la misma ilusión que el primer día para conseguir que la mayoría de nuestros clientes queden satisfechos.
+                    
+                Somos conscientes que en la rama de la comida rápida, y en la restauración en general, es muy difícil crear un producto de calidad que sea del gusto de un público en general. Aun así , y para que todo este esfuerzo tenga sentido, nos esforzamos a diario para ser del agrado del mayor número de clientes satisfechos posibles, que en la actualidad son bastantes, y cada día recibimos muchas nuevas visitas.</p>
+          </div>
+      </div>
 
-            <label for="menuhamburguesa" class="header__nav">
-                <img src="../assets/menu.svg" alt="nav__img" class="nav__img">
-            </label>
-            <input type="checkbox" id="menuhamburguesa" class="nav__input">
+      <div class="container mt-5">
+        <div class="row gap-2">
+            <div class="col-sm bg-danger text-light p-5 col-md-6 col-lg-6">
+                <p class="text-center" style="font-size: 20px;">Para cumplir con nuestros altos estándares de calidad, además de proveernos de carne de calidad angus para nuestra linea convencional, también tenemos un convenio directo de japón para proveernos de carne wagyu kobe A5 para nuestra linea premium, considerada por expertos como la mejor carne del mundo, la cual esta disponible en nuestros tres locales. 
 
-            <nav class="header__menu">
-                <a href="../index.html" class="nav__item">Inicio</a>
-                <a href="../Pages/quienessomos.html"  class="nav__item">Quienes somos</a>
-                <a href="../Pages/menu.html"  class="nav__item">Menú</a>
-                <a href="../Pages/locales.html"  class="nav__item">Locales</a>
-                <a href="../Pages/contacto.html"  class="nav__item">Contacto</a>
-            </nav>
-
-        </header>
-
-            
-        <div class="quienessomos__historiaimg">
-            <img src="../Img/imagendeuda.png" alt="imgdeuda">
-        </div>
-
-        <div class="quienessomos__historiatxt">
-            <p>Somos una de las hamburgueserías más antiguas de Palermo, situados en la zona de Plaza Serrano, en el mismo lugar desde 1990.
-
-            En la actualidad somos un equipo de 30 personas, que trabajamos a diario para dar a nuestros clientes el mejor servicio y la mejor calidad.
-                
-            Con mas de 30 años de experiencia en el sector de la hamburguesería, y siempre con la misma dirección, trabajamos a diario con la misma ilusión que el primer día para conseguir que la mayoría de nuestros clientes queden satisfechos.
-                
-            Somos conscientes que en la rama de la comida rápida, y en la restauración en general, es muy difícil crear un producto de calidad que sea del gusto de un público en general. Aun así , y para que todo este esfuerzo tenga sentido, nos esforzamos a diario para ser del agrado del mayor número de clientes satisfechos posibles, que en la actualidad son bastantes, y cada día recibimos muchas nuevas visitas.</p>
-        </div>
-
-        <div class="quienessomos__proovedorestxt">
-            <p>Para cumplir con nuestros altos estándares de calidad, además de proveernos de carne de calidad angus para nuestra linea convencional, también tenemos un convenio directo de japón para proveernos de carne wagyu kobe A5 para nuestra linea premium, considerada por expertos como la mejor carne del mundo, la cual esta disponible en nuestros tres locales. 
-
-            Dicho convenio fue logrado luego de una ardua negociación con nuestros pares japoneses, los cuales tienen un standar de calidad altisimo y para cumplirlos nos exigieron un buen número de avales y controles los cuales estamos orgullosos de cumplir para llevar el mejor producto posible.
-                </p>
-        </div>
-
-        <div class="quienessomos__proovedoresimg">
-                <img src="../Img/Estatua Kobe.jpg" alt="kobe">
-        </div>
-
-        <p class="gracias">Sin más que agregar, estamos orgullosos que nos sigan eligiendo y esperamos que siga siendo así por el resto de los años.
-
-            Tasty Burger.
-        </p>
-
-        <footer>
-            <div id="footer__texto">
-                <p> Tasty Burger - Buenos Aires - Argentina - 2022</p>
-                <p>Todos los derechos reservados</p>
+                    Dicho convenio fue logrado luego de una ardua negociación con nuestros pares japoneses, los cuales tienen un standar de calidad altisimo y para cumplirlos nos exigieron un buen número de avales y controles los cuales estamos orgullosos de cumplir para llevar el mejor producto posible.</p>
             </div>
-            <div id="footer__redes">
-                <a href="https://www.instagram.com/" target="_blank"><img src="../Img/instagram.png" alt="insta"></a>
-                <a href="https://twitter.com/" target="_blank"><img src="../Img/twitter.png" alt="twitt"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="../Img/facebook.png" alt="face"></a>
-            </div>
-        </footer>
+            <div class="col bg-warning p-5 text-danger col-lg">
+                <img src="../Img/imagendeuda.png" class="img-fluid" alt="logo">
+          </div>
+      </div>
 
-    </div>
-
+      <ul class="nav justify-content-center fixed-bottom">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/" target="_blank">Twitter</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/" target="_blank">Facebook</a>
+          </li>
+      </ul>
 
 </body>
 </html>
